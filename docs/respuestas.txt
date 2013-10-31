@@ -4,103 +4,19 @@ Utiliza el framework Ruby on Rails por GitHub, Inc. (anteriormente conocida como
 El código se almacena de forma pública, aunque también se puede hacer de forma privada, creando una cuenta de pago.
 
 10. ¿Qúe es una clave pública?
+
 Es el método criptográfico que usa un par de claves para el envío de mensajes. 
 Las dos claves pertenecen a la misma persona que ha enviado el mensaje. Una clave es pública y se puede entregar a cualquier persona, 
 la otra clave es privada y el propietario debe guardarla de modo que nadie tenga acceso a ella. 
 Además, los métodos criptográficos garantizan que esa pareja de claves sólo se puede generar una vez, 
 de modo que se puede asumir que no es posible que dos personas hayan obtenido casualmente la misma pareja de claves.
 
-11. Sit́uese en la Pestãna de Comandos(Dashboard) de Cloud 9 . En la secci ́on de la derecha,bajo el ep ́ıgrafe “account settin
-gs” seleccione la opci ́on “Show your SSH key”
-
-12. Copie en el almacenamiento temporal la clave ṕublica.Para ello, pulse el boton verde “copy”.
-13. Sit́uese en la pest ̃na deGitHuby ãnada clave-p ́ublica que ha copiado.
-
-1a) En la barra de usuario, en la esquina superior derecha de la ṕagina, haga clik en el icono
-de “Configuraci ́on de la cuenta” (Account Settings).
-
-b) En la barra de opciones que aparece en a la izquierda haga clik en la etiqueta “Claves SSH”(SSH Keys).
-c) Haga clik en el bot ́on “Add SSH key” que aparece a la derecha
-d) En el campo de texto T ́ıtulo (Title)) escribaCloud 9
-e) En el ́area de texto Clave (Key)) pegue (Ctrl+V) la clave que copi ́o en el ejercicio 12.
-f) Pulse el bot ́on verde para crear la clave (Add key).
 14. ¿Qúe es unrepositorio remoto?
-15. Cree un repositorio enGitHub
-a
-) En la barra de usuario, en la esquina superior derecha de la p
-́agina, haga clik en el icono
-de “Crear un repositorio nuevo” (
-Create a New Repo
-).
-b
-) Introduzca el nombre
-prct02
-c
-) Seleccione que quiere hacer el repositorio p ́ublico.
-d
-)
-no
-seleccione la casilla de crear el fichero
-readme
-.md.
-e
-) Pulse el bot ́on para crear el repositorio (
-Create repository
-)
-16. Situado en el directorio de trabajo (
-prct02
-), inicial ́ıcelo para que sea un repositorio
-git
-. (
-git init
-)
-17. Compruebe que se crea el directorio
-.git
-(
-ls -la
-).
-18. Cree un fichero
-test01
-en el directorio
-src
-. (
-echo "Se ha a~nadido un repositorio remoto" > src/test01
-)
-19. A ̃nada todos los ficheros y subdirectorios del directori
-o actual al
-́ındice del repositorio git
-. (
-git add .
-)
-20. Confirme (
-commit
-) los cambios del ́ındice en el repositorio git local.
-(
-git commit -m "Primera confirmaci ́on - ejemplo de remotos"
-)
-21. Muestre el fichero con los registros realizados en el repo
-sitorio hasta el momento. (
-git log
-)
-22. Cree un enlace al repositorio remoto con nombre corto
-origin
-(
-git remote add origin git@github.com:aluXXXXXXXX/prct02
-.git
-)
-23. Empuje los cambios en el repositorio remoto denominado
-origin
-.
-(
-git push -u origin master
-)
-24. Muestre los detalles del repositorio remoto denominado
-origin
-. (
-git remote show origin
-)
-25. Muestre los repositorios remotos que est ́an definidos (
-git remote -v
-)
-26. Escriba la direcci ́on del repositorio que ha creado en Gi
-tHub en la tarea habilitada en el cam
+Un repositorio remoto no es más que una copia de los archivos, carpetas, fotos, etc. qué se encuentran bajo la supervisión de git,
+y están respaldados en un sitio externo a nuestro computadorEsto nos permite poder colaborar en un proyecto con otros usuarios de manera distribuida; 
+cabe destacar que un repositorio remoto se pueden tener permisos de lectura y escritura o solo lectura.
+
+
+25. Muestre los repositorios remotos que est ́an definidosorigin 
+git@github.com:alu0100155198/prct02.git (fetch)
+origin  git@github.com:alu0100155198/prct02.git (push)
